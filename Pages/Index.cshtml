@@ -1,0 +1,213 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "MorseNap - Estación de Telegrafía Digital";
+}
+
+@section Styles {
+    <style>
+        /* Tarjetas de control generales */
+        .card-morse {
+            background-color: #1a1d29;
+            border: 1px solid #2d3248;
+            border-radius: 12px;
+        }
+
+        /* Asegurando textos de cabecera completamente blancos y legibles */
+        .card-header-text {
+            background-color: #24293e;
+            color: #ffffff !important;
+            font-weight: 600;
+            border-bottom: 1px solid #2d3248;
+            border-top-left-radius: 12px !important;
+            border-top-right-radius: 12px !important;
+        }
+
+        .card-header-morse {
+            background-color: #24293e;
+            color: #c59b27 !important;
+            font-weight: 600;
+            border-bottom: 1px solid #2d3248;
+            border-top-left-radius: 12px !important;
+            border-top-right-radius: 12px !important;
+        }
+
+        /* Campos de Entrada de Texto */
+        .form-control-morse {
+            background-color: #0f111a;
+            border: 1px solid #2d3248;
+            color: #ffffff !important; /* Texto de entrada 100% blanco */
+            border-radius: 8px;
+            resize: none;
+        }
+
+            .form-control-morse:focus {
+                background-color: #0f111a;
+                border-color: #c59b27;
+                color: #ffffff !important;
+                box-shadow: 0 0 0 0.25rem rgba(197, 155, 39, 0.25);
+            }
+            /* Color del marcador de posición (Placeholder) */
+            .form-control-morse::placeholder {
+                color: #4a5568 !important;
+            }
+
+        /* Botones del ecosistema */
+        .btn-bronce {
+            background-color: #c59b27;
+            color: #12141c !important; /* Texto oscuro para contraste sobre el botón bronce */
+            font-weight: 600;
+            border: none;
+            transition: all 0.2s ease-in-out;
+        }
+
+            .btn-bronce:hover {
+                background-color: #e0b034;
+                color: #12141c !important;
+                transform: translateY(-1px);
+            }
+
+        .btn-outline-morse {
+            border: 1px solid #2d3248;
+            color: #ffffff !important; /* Texto del botón a blanco */
+            transition: all 0.2s ease;
+        }
+
+            .btn-outline-morse:hover {
+                background-color: #24293e;
+                color: #ffffff !important;
+            }
+
+        /* Correcciones de textos secundarios para alta legibilidad */
+        .text-custom-white {
+            color: #e2e8f0 !important;
+        }
+
+        .text-custom-muted {
+            color: #a0aec0 !important;
+        }
+    </style>
+}
+
+<div class="text-center mb-5">
+    <h2 class="fw-bold text-white">Estación de Telegrafía Digital</h2>
+    <p class="text-custom-muted mx-auto" style="max-width: 600px;">
+        Traducción interactiva basada en estructuras lógicas de árboles. Procesamiento directo sin arreglos en memoria.
+    </p>
+</div>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger alert-dismissible fade show border-0 shadow-sm mb-4" role="alert" style="background-color: #742a2a; color: #ffffff;">
+        <strong><i class="bi bi-exclamation-triangle-fill me-2"></i> Error de transmisión:</strong> @Model.ErrorMessage
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="row g-4">
+    <div class="col-md-6">
+        <form method="post" asp-page-handler="TranslateText">
+            <div class="card card-morse shadow-sm h-100">
+                <div class="card-header card-header-text d-flex align-items-center justify-content-between py-3">
+                    <span><i class="bi bi-file-text me-2"></i>Texto Plano</span>
+                    <span class="badge" style="background-color: #2d3248; color: #ffffff;">Estándar Alfa-Numérico</span>
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <textarea class="form-control form-control-morse font-monospace mb-4" name="InputText" rows="6" placeholder="Escribe el mensaje a transmitir...">@Model.InputText</textarea>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-bronce py-2">Generar Código Morse <i class="bi bi-arrow-right-short ms-1"></i></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-md-6">
+        <form method="post" asp-page-handler="TranslateMorse">
+            <div class="card card-morse shadow-sm h-100">
+                <div class="card-header card-header-morse d-flex align-items-center justify-content-between py-3">
+                    <span><i class="bi bi-reception-4 me-2"></i>Señal Morse</span>
+                    <span class="text-custom-muted small">Puntos (.) y Rayas (-)</span>
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <textarea class="form-control form-control-morse font-monospace mb-4" name="InputMorse" rows="6" placeholder="... --- ... (3 espacios entre letras, 7 entre palabras)">@Model.InputMorse</textarea>
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-outline-morse w-100 py-2"><i class="bi bi-arrow-left-short me-1"></i> Decodificar Señal</button>
+                        @if (!string.IsNullOrEmpty(Model.InputMorse) && string.IsNullOrEmpty(Model.ErrorMessage))
+                        {
+                            <button type="button" class="btn btn-bronce px-4" onclick="playMorse('@Model.InputMorse')" title="Reproducir audio internacional">
+                                <i class="bi bi-volume-up-fill"></i>
+                            </button>
+                        }
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row mt-5 mb-5">
+    <div class="col-12">
+        <div class="card card-morse p-3">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="p-3 rounded-3 border" style="background-color: #0f111a; border-color: #2d3248 !important;">
+                        <i class="bi bi-folder2-open fs-4 text-warning"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1 fw-semibold text-white">Gestión de Archivos de Texto</h6>
+                        <p class="text-custom-muted small mb-0">Permite procesar archivos planos e importar/exportar cadenas directamente.</p>
+                    </div>
+                </div>
+                <div class="d-flex gap-2 flex-wrap">
+                    <form method="post" enctype="multipart/form-data" asp-page-handler="UploadFile" class="d-flex gap-2">
+                        <input type="file" name="Upload" class="form-control form-control-morse form-control-sm" style="max-width: 220px;" required />
+                        <button type="submit" class="btn btn-outline-morse btn-sm">Importar</button>
+                    </form>
+
+                    @if (!string.IsNullOrEmpty(Model.InputText) || !string.IsNullOrEmpty(Model.InputMorse))
+                    {
+                        <form method="post" asp-page-handler="DownloadFile">
+                            <input type="hidden" name="ContentToDownload" value="@(string.IsNullOrEmpty(Model.InputMorse) ? Model.InputText : Model.InputMorse)" />
+                            <button type="submit" class="btn btn-success btn-sm px-3 fw-medium" style="background-color: #15803d; border: none;"><i class="bi bi-download me-1"></i> Exportar .txt</button>
+                        </form>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function playMorse(morseCode) {
+            const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            let time = audioCtx.currentTime;
+            const dotLength = 0.1;
+
+            for (let char of morseCode) {
+                if (char === '.' || char === '-') {
+                    const duration = char === '.' ? dotLength : dotLength * 3;
+                    const osc = audioCtx.createOscillator();
+                    const gain = audioCtx.createGain();
+
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(700, time);
+
+                    gain.gain.setValueAtTime(1, time);
+                    gain.gain.setValueAtTime(0, time + duration - 0.01);
+
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+
+                    osc.start(time);
+                    osc.stop(time + duration);
+
+                    time += duration + dotLength;
+                } else if (char === ' ') {
+                    time += dotLength;
+                }
+            }
+        }
+    </script>
+}
