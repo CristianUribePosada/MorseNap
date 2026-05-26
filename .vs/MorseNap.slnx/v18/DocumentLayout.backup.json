@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\crism\\source\\repos\\MorseNap\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A815E03-A326-42D3-B777-EFF85907D9CD}|MorseNap.csproj|c:\\users\\crism\\source\\repos\\morsenap\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3A815E03-A326-42D3-B777-EFF85907D9CD}|MorseNap.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{81BEFAEC-4DB4-76A0-B32C-28EEBB9AC3F2}|MorseNap.csproj|c:\\users\\crism\\source\\repos\\morsenap\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{81BEFAEC-4DB4-76A0-B32C-28EEBB9AC3F2}|MorseNap.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A815E03-A326-42D3-B777-EFF85907D9CD}|MorseNap.csproj|c:\\users\\crism\\source\\repos\\morsenap\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3A815E03-A326-42D3-B777-EFF85907D9CD}|MorseNap.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{81BEFAEC-4DB4-76A0-B32C-28EEBB9AC3F2}|MorseNap.csproj|c:\\users\\crism\\source\\repos\\morsenap\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81BEFAEC-4DB4-76A0-B32C-28EEBB9AC3F2}|MorseNap.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A815E03-A326-42D3-B777-EFF85907D9CD}|MorseNap.csproj|c:\\users\\crism\\source\\repos\\morsenap\\structures\\morsetree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A815E03-A326-42D3-B777-EFF85907D9CD}|MorseNap.csproj|solutionrelative:structures\\morsetree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81BEFAEC-4DB4-76A0-B32C-28EEBB9AC3F2}|MorseNap.csproj|c:\\users\\crism\\source\\repos\\morsenap\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81BEFAEC-4DB4-76A0-B32C-28EEBB9AC3F2}|MorseNap.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A815E03-A326-42D3-B777-EFF85907D9CD}|MorseNap.csproj|c:\\users\\crism\\source\\repos\\morsenap\\structures\\morsenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A815E03-A326-42D3-B777-EFF85907D9CD}|MorseNap.csproj|solutionrelative:structures\\morsenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81BEFAEC-4DB4-76A0-B32C-28EEBB9AC3F2}|MorseNap.csproj|c:\\users\\crism\\source\\repos\\morsenap\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81BEFAEC-4DB4-76A0-B32C-28EEBB9AC3F2}|MorseNap.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A815E03-A326-42D3-B777-EFF85907D9CD}|MorseNap.csproj|c:\\users\\crism\\source\\repos\\morsenap\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A815E03-A326-42D3-B777-EFF85907D9CD}|MorseNap.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81BEFAEC-4DB4-76A0-B32C-28EEBB9AC3F2}|MorseNap.csproj|c:\\users\\crism\\source\\repos\\morsenap\\structures\\morsetree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81BEFAEC-4DB4-76A0-B32C-28EEBB9AC3F2}|MorseNap.csproj|solutionrelative:structures\\morsetree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81BEFAEC-4DB4-76A0-B32C-28EEBB9AC3F2}|MorseNap.csproj|c:\\users\\crism\\source\\repos\\morsenap\\structures\\morsenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81BEFAEC-4DB4-76A0-B32C-28EEBB9AC3F2}|MorseNap.csproj|solutionrelative:structures\\morsenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\MorseNap\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\crism\\source\\repos\\MorseNap\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-26T04:00:36.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\MorseNap\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
@@ -42,12 +59,11 @@
               "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAiwHsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-26T03:26:12.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T03:26:12.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\MorseNap\\Pages\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
@@ -55,25 +71,23 @@
               "RelativeToolTip": "Pages\\Index.cshtml.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T03:06:34.062Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T03:06:34.062Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\MorseNap\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
               "ToolTip": "C:\\Users\\crism\\source\\repos\\MorseNap\\Pages\\Index.cshtml",
               "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AgIAALQAAAAAAAAAAAAmwMMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwMMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-26T03:06:29.883Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T03:06:29.883Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MorseTree.cs",
               "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\MorseNap\\Structures\\MorseTree.cs",
               "RelativeDocumentMoniker": "Structures\\MorseTree.cs",
@@ -81,12 +95,11 @@
               "RelativeToolTip": "Structures\\MorseTree.cs",
               "ViewState": "AgIAAGoAAAAAAAAAAAAuwIQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T03:05:45.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T03:05:45.375Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MorseNode.cs",
               "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\MorseNap\\Structures\\MorseNode.cs",
               "RelativeDocumentMoniker": "Structures\\MorseNode.cs",
@@ -94,8 +107,7 @@
               "RelativeToolTip": "Structures\\MorseNode.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T03:05:10.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T03:05:10.382Z"
             }
           ]
         }

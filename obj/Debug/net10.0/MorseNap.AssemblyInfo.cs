@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MorseNap")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02bc3db8f86e7facd9cc22fc60076896f80e1de1")]
 [assembly: System.Reflection.AssemblyProductAttribute("MorseNap")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MorseNap")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
